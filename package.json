@@ -5,11 +5,15 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.config.js",
-    "build": "webpack"
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d output"
   },
   "author": "",
+  "homepage": "https://jhopper28.github.io/coactive-react",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
